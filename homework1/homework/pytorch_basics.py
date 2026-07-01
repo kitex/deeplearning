@@ -34,7 +34,7 @@ class PyTorchBasics:
 
         Solution length: 13 characters
         """
-        raise NotImplementedError
+        return x[::3]
 
     @staticmethod
     def make_it_pytorch_2(x: torch.Tensor) -> torch.Tensor:
@@ -58,7 +58,7 @@ class PyTorchBasics:
 
         Solution length: 26 characters
         """
-        raise NotImplementedError
+        return torch.max(x, dim=-1).values
 
     @staticmethod
     def make_it_pytorch_3(x: torch.Tensor) -> torch.Tensor:
